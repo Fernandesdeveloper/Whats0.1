@@ -49,15 +49,9 @@
       font-weight: 600;
       color: #111b21;
       margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
     }
 
-    #nick-form {
-      display: flex;
-      gap: 6px;
-    }
+    #nick-form { display: flex; gap: 6px; }
 
     #nick-input {
       flex: 1;
@@ -69,7 +63,6 @@
       color: #111;
       outline: none;
     }
-
     #nick-input:focus { border-color: #25d366; }
 
     #nick-btn {
@@ -81,9 +74,7 @@
       color: white;
       cursor: pointer;
       font-weight: 500;
-      white-space: nowrap;
     }
-
     #nick-btn:hover { background: #1fba58; }
     #nick-btn:disabled { background: #aaa; cursor: default; }
 
@@ -114,7 +105,6 @@
       border-bottom: 1px solid #f0f2f5;
       transition: background 0.1s;
     }
-
     .room-item:hover { background: #f5f6f6; }
     .room-item.active { background: #e9edef; }
 
@@ -131,13 +121,7 @@
     }
 
     .room-info { flex: 1; min-width: 0; }
-
-    .room-name {
-      font-size: 15px;
-      font-weight: 500;
-      color: #111b21;
-    }
-
+    .room-name { font-size: 15px; font-weight: 500; color: #111b21; }
     .room-preview {
       font-size: 13px;
       color: #667781;
@@ -147,27 +131,8 @@
       margin-top: 2px;
     }
 
-    .room-count {
-      background: #25d366;
-      color: white;
-      border-radius: 50%;
-      min-width: 20px;
-      height: 20px;
-      font-size: 11px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      padding: 0 4px;
-    }
-
     /* ── Chat area ── */
-    #chat-area {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      min-width: 0;
-    }
+    #chat-area { flex: 1; display: flex; flex-direction: column; min-width: 0; }
 
     #empty-state {
       flex: 1;
@@ -179,14 +144,8 @@
       background: #f0f2f5;
       color: #667781;
     }
-
     #empty-state .emoji { font-size: 56px; }
-
-    #empty-state p {
-      font-size: 14px;
-      color: #667781;
-    }
-
+    #empty-state p { font-size: 14px; color: #667781; }
     #empty-state small {
       font-size: 12px;
       color: #aaa;
@@ -203,31 +162,16 @@
       gap: 12px;
       background: #f0f2f5;
     }
-
     #chat-header-icon {
-      width: 40px;
-      height: 40px;
+      width: 40px; height: 40px;
       border-radius: 50%;
       background: #d9fdd3;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; flex-shrink: 0;
     }
-
     #chat-header-info { flex: 1; }
-
-    #chat-header-name {
-      font-size: 16px;
-      font-weight: 600;
-      color: #111b21;
-    }
-
-    #chat-header-sub {
-      font-size: 12px;
-      color: #667781;
-    }
+    #chat-header-name { font-size: 16px; font-weight: 600; color: #111b21; }
+    #chat-header-sub { font-size: 12px; color: #667781; }
 
     /* ── Messages ── */
     #messages {
@@ -238,15 +182,9 @@
       flex-direction: column;
       gap: 4px;
       background: #efeae2;
-      /* WhatsApp background pattern */
-      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4c9b8' fill-opacity='0.3'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     }
 
-    .msg-wrap {
-      display: flex;
-      flex-direction: column;
-    }
-
+    .msg-wrap { display: flex; flex-direction: column; }
     .msg-wrap.mine { align-items: flex-end; }
     .msg-wrap.other { align-items: flex-start; }
 
@@ -256,46 +194,23 @@
       border-radius: 8px;
       font-size: 14px;
       line-height: 1.5;
-      position: relative;
       word-break: break-word;
     }
-
     .msg-wrap.mine .msg-bubble {
       background: #d9fdd3;
       color: #111b21;
       border-bottom-right-radius: 2px;
     }
-
     .msg-wrap.other .msg-bubble {
       background: #ffffff;
       color: #111b21;
       border-bottom-left-radius: 2px;
     }
 
-    .msg-nick {
-      font-size: 12px;
-      font-weight: 600;
-      color: #25d366;
-      margin-bottom: 2px;
-    }
-
-    .msg-meta {
-      display: flex;
-      align-items: center;
-      gap: 3px;
-      justify-content: flex-end;
-      margin-top: 2px;
-    }
-
-    .msg-time {
-      font-size: 11px;
-      color: #667781;
-    }
-
-    .msg-check {
-      color: #53bdeb;
-      font-size: 14px;
-    }
+    .msg-nick { font-size: 12px; font-weight: 600; color: #25d366; margin-bottom: 2px; }
+    .msg-meta { display: flex; align-items: center; gap: 3px; justify-content: flex-end; margin-top: 2px; }
+    .msg-time { font-size: 11px; color: #667781; }
+    .msg-check { color: #53bdeb; font-size: 13px; }
 
     .date-divider {
       text-align: center;
@@ -306,7 +221,14 @@
       border-radius: 8px;
       align-self: center;
       margin: 8px 0;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+    }
+
+    .loading-msg {
+      text-align: center;
+      font-size: 13px;
+      color: #667781;
+      margin-top: 20px;
+      align-self: center;
     }
 
     /* ── Input area ── */
@@ -328,41 +250,31 @@
       color: #111b21;
       font-size: 15px;
       outline: none;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.08);
     }
-
     #msg-input::placeholder { color: #aaa; }
 
     #send-btn {
-      width: 44px;
-      height: 44px;
+      width: 44px; height: 44px;
       border-radius: 50%;
       border: none;
       background: #25d366;
       color: white;
       cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: flex; align-items: center; justify-content: center;
       flex-shrink: 0;
       font-size: 20px;
       transition: background 0.15s;
     }
-
     #send-btn:hover { background: #1fba58; }
     #send-btn:disabled { background: #ccc; cursor: default; }
 
-    /* scrollbar */
     ::-webkit-scrollbar { width: 5px; }
-    ::-webkit-scrollbar-track { background: transparent; }
     ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
   </style>
 </head>
 <body>
 
 <div id="app">
-
-  <!-- Sidebar -->
   <div id="sidebar">
     <div id="sidebar-header">
       <h2>💬 ChatWeb</h2>
@@ -376,7 +288,6 @@
     <div id="rooms-list"></div>
   </div>
 
-  <!-- Chat area -->
   <div id="chat-area">
     <div id="empty-state">
       <div class="emoji">💬</div>
@@ -384,101 +295,96 @@
       <small>Mensagens expiram automaticamente em 24h</small>
     </div>
   </div>
-
 </div>
 
+<!-- Firebase SDK (compat version — funciona direto no browser sem bundler) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
 <script>
+  /* ── Firebase config ── */
+  const firebaseConfig = {
+    apiKey: "AIzaSyCKs6rnTlOoTiWXQLleoKQycpTRS25mHBg",
+    authDomain: "chatweb-4c13b.firebaseapp.com",
+    projectId: "chatweb-4c13b",
+    storageBucket: "chatweb-4c13b.firebasestorage.app",
+    messagingSenderId: "1024726923790",
+    appId: "1:1024726923790:web:3635c8927dbfbe78ddda5f"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+
+  /* ── App state ── */
   const ROOMS = [
-    { id: 'geral',      name: 'Geral',        icon: '💬' },
-    { id: 'tecnologia', name: 'Tecnologia',   icon: '💻' },
-    { id: 'memes',      name: 'Memes & Humor',icon: '😂' },
-    { id: 'noticias',   name: 'Notícias',     icon: '📰' },
+    { id: 'geral',      name: 'Geral',         icon: '💬' },
+    { id: 'tecnologia', name: 'Tecnologia',    icon: '💻' },
+    { id: 'memes',      name: 'Memes & Humor', icon: '😂' },
+    { id: 'noticias',   name: 'Notícias',      icon: '📰' },
   ];
 
-  const TTL = 24 * 60 * 60 * 1000; // 24 horas em ms
-  let nickname = '';
+  const TTL_MS = 24 * 60 * 60 * 1000; // 24h
+  let nickname    = '';
   let currentRoom = null;
-  let pollInterval = null;
-  let lastMsgCount = 0;
+  let unsubscribe = null; // listener do Firestore
 
-  /* ── Storage helpers ── */
-  function storageKey(roomId) { return `chatweb_room_${roomId}`; }
-
-  function getMessages(roomId) {
-    try {
-      const raw = localStorage.getItem(storageKey(roomId));
-      if (!raw) return [];
-      const msgs = JSON.parse(raw);
-      const now = Date.now();
-      return msgs.filter(m => now - m.ts < TTL);
-    } catch { return []; }
+  /* ── Helpers ── */
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
-  function saveMessages(roomId, msgs) {
-    try {
-      const now = Date.now();
-      const clean = msgs.filter(m => now - m.ts < TTL);
-      localStorage.setItem(storageKey(roomId), JSON.stringify(clean));
-    } catch {}
-  }
-
-  function addMessage(roomId, text) {
-    const msgs = getMessages(roomId);
-    msgs.push({
-      nick: nickname,
-      text: text,
-      ts: Date.now(),
-      id: Math.random().toString(36).slice(2)
-    });
-    saveMessages(roomId, msgs);
-  }
-
-  /* ── Formatters ── */
   function formatTime(ts) {
-    return new Date(ts).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+    return new Date(ts).toLocaleTimeString('pt-BR', { hour:'2-digit', minute:'2-digit' });
   }
 
   function formatDate(ts) {
-    const d = new Date(ts);
-    const today = new Date();
-    const yest  = new Date(); yest.setDate(yest.getDate() - 1);
-    if (d.toDateString() === today.toDateString()) return 'Hoje';
-    if (d.toDateString() === yest.toDateString())  return 'Ontem';
+    const d    = new Date(ts);
+    const now  = new Date();
+    const yest = new Date(); yest.setDate(now.getDate() - 1);
+    if (d.toDateString() === now.toDateString())  return 'Hoje';
+    if (d.toDateString() === yest.toDateString()) return 'Ontem';
     return d.toLocaleDateString('pt-BR');
   }
 
-  /* ── Render rooms sidebar ── */
-  function renderRooms() {
+  /* ── Render sidebar rooms ── */
+  async function renderRooms() {
     const list = document.getElementById('rooms-list');
     list.innerHTML = '';
-    ROOMS.forEach(room => {
-      const msgs = getMessages(room.id);
-      const last = msgs[msgs.length - 1];
-      const div  = document.createElement('div');
-      div.className = 'room-item' + (currentRoom === room.id ? ' active' : '');
 
+    for (const room of ROOMS) {
+      // Busca última mensagem de cada sala
+      let preview = 'Nenhuma mensagem ainda';
+      try {
+        const snap = await db.collection(`rooms/${room.id}/messages`)
+          .orderBy('ts', 'desc').limit(1).get();
+        if (!snap.empty) {
+          const d = snap.docs[0].data();
+          preview = `${d.nick}: ${d.text}`;
+        }
+      } catch {}
+
+      const div = document.createElement('div');
+      div.className = 'room-item' + (currentRoom === room.id ? ' active' : '');
       div.innerHTML = `
         <div class="room-icon">${room.icon}</div>
         <div class="room-info">
           <div class="room-name">${room.name}</div>
-          <div class="room-preview">
-            ${last
-              ? `<strong>${last.nick}:</strong> ${last.text}`
-              : 'Nenhuma mensagem ainda'}
-          </div>
+          <div class="room-preview">${escapeHtml(preview)}</div>
         </div>
-        ${msgs.length ? `<div class="room-count">${msgs.length}</div>` : ''}
       `;
-
       div.addEventListener('click', () => openRoom(room.id));
       list.appendChild(div);
-    });
+    }
   }
 
   /* ── Open a room ── */
   function openRoom(roomId) {
+    // Para o listener anterior
+    if (unsubscribe) { unsubscribe(); unsubscribe = null; }
+
     currentRoom = roomId;
-    lastMsgCount = 0;
     renderRooms();
 
     const room = ROOMS.find(r => r.id === roomId);
@@ -489,10 +395,10 @@
         <div id="chat-header-icon">${room.icon}</div>
         <div id="chat-header-info">
           <div id="chat-header-name">${room.name}</div>
-          <div id="chat-header-sub">Sala pública · mensagens expiram em 24h</div>
+          <div id="chat-header-sub">Sala pública · mensagens expiram em 24h · tempo real 🟢</div>
         </div>
       </div>
-      <div id="messages"></div>
+      <div id="messages"><div class="loading-msg">Carregando mensagens...</div></div>
       <div id="input-area">
         <input
           id="msg-input"
@@ -506,40 +412,46 @@
       </div>
     `;
 
-    renderMessages(true);
-
     document.getElementById('msg-input').addEventListener('keydown', e => {
       if (e.key === 'Enter') sendMsg();
     });
     document.getElementById('send-btn').addEventListener('click', sendMsg);
     document.getElementById('msg-input').focus();
 
-    if (pollInterval) clearInterval(pollInterval);
-    pollInterval = setInterval(() => {
-      renderMessages(false);
-      renderRooms();
-    }, 2000);
+    // Listener em tempo real — últimas 100 msgs das últimas 24h
+    const cutoff = new Date(Date.now() - TTL_MS);
+    unsubscribe = db.collection(`rooms/${roomId}/messages`)
+      .where('ts', '>', cutoff)
+      .orderBy('ts', 'asc')
+      .limit(100)
+      .onSnapshot(snapshot => {
+        renderMessages(snapshot.docs.map(d => ({ id: d.id, ...d.data() })));
+        renderRooms();
+      }, err => {
+        console.error('Firestore error:', err);
+      });
   }
 
   /* ── Render messages ── */
-  function renderMessages(forceScroll = true) {
+  function renderMessages(msgs) {
     const container = document.getElementById('messages');
     if (!container) return;
 
-    const msgs = getMessages(currentRoom);
-    const shouldScroll = forceScroll || msgs.length !== lastMsgCount;
-    lastMsgCount = msgs.length;
+    if (!msgs.length) {
+      container.innerHTML = `<div class="loading-msg">Nenhuma mensagem ainda.<br>Seja o primeiro a escrever! 👋</div>`;
+      return;
+    }
 
     let lastDate = '';
     let html = '';
 
     msgs.forEach(m => {
-      const dateLabel = formatDate(m.ts);
+      const ts = m.ts instanceof Date ? m.ts : m.ts.toDate();
+      const dateLabel = formatDate(ts);
       if (dateLabel !== lastDate) {
         html += `<div class="date-divider">${dateLabel}</div>`;
         lastDate = dateLabel;
       }
-
       const mine = m.nick === nickname;
       html += `
         <div class="msg-wrap ${mine ? 'mine' : 'other'}">
@@ -547,7 +459,7 @@
             ${!mine ? `<div class="msg-nick">${escapeHtml(m.nick)}</div>` : ''}
             ${escapeHtml(m.text)}
             <div class="msg-meta">
-              <span class="msg-time">${formatTime(m.ts)}</span>
+              <span class="msg-time">${formatTime(ts)}</span>
               ${mine ? '<span class="msg-check">✓✓</span>' : ''}
             </div>
           </div>
@@ -555,28 +467,30 @@
       `;
     });
 
-    if (!msgs.length) {
-      html = `<div style="text-align:center;color:#667781;font-size:13px;margin-top:32px;
-                          background:rgba(255,255,255,.7);padding:10px 20px;border-radius:8px;
-                          align-self:center;">
-                Nenhuma mensagem ainda.<br>Seja o primeiro a escrever!
-              </div>`;
-    }
-
     container.innerHTML = html;
-    if (shouldScroll) container.scrollTop = container.scrollHeight;
+    container.scrollTop = container.scrollHeight;
   }
 
-  /* ── Send a message ── */
-  function sendMsg() {
+  /* ── Send message ── */
+  async function sendMsg() {
     if (!nickname) return;
     const inp  = document.getElementById('msg-input');
     const text = inp.value.trim();
     if (!text || !currentRoom) return;
-    addMessage(currentRoom, text);
+
     inp.value = '';
-    renderMessages(true);
-    renderRooms();
+    inp.focus();
+
+    try {
+      await db.collection(`rooms/${currentRoom}/messages`).add({
+        nick: nickname,
+        text: text,
+        ts:   firebase.firestore.FieldValue.serverTimestamp()
+      });
+    } catch (err) {
+      console.error('Erro ao enviar:', err);
+      inp.value = text; // devolve o texto se falhar
+    }
   }
 
   /* ── Set nickname ── */
@@ -587,22 +501,12 @@
       return;
     }
     nickname = val;
-    document.getElementById('nick-status').textContent = `Olá, ${nickname}! Escolha uma sala ao lado.`;
+    document.getElementById('nick-status').textContent = `Olá, ${nickname}! Escolha uma sala. 👋`;
     document.getElementById('nick-btn').textContent = '✓';
     document.getElementById('nick-btn').disabled = true;
     document.getElementById('nick-input').disabled = true;
-
     if (currentRoom) openRoom(currentRoom);
     renderRooms();
-  }
-
-  /* ── Escape HTML to avoid XSS ── */
-  function escapeHtml(str) {
-    return str
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
   }
 
   /* ── Init ── */
@@ -613,6 +517,5 @@
 
   renderRooms();
 </script>
-
 </body>
 </html>
